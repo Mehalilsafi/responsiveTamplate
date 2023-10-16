@@ -1,0 +1,283 @@
+*{
+  -webkit-box-sizing: border-box;
+ --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Work Sans', sans-serif;
+}
+:root {
+  --main-color:#10cab7;
+  --second-color: #f6f6f6;
+
+}
+.cantainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* START HOME SECTION  */
+.header{
+  width: 100%;
+  height: 12vh;
+  background-color: rgb(255, 255, 255);
+}
+.logo{ 
+  height: 50PX;
+  margin-top: 10PX;
+}
+.headerCantainer{
+  display: flex;
+  justify-content: space-between;
+}
+header .linkes {
+  position: relative;
+}
+.headerCantainer i{
+  font-size: 20PX;
+}
+.linkes i{
+transition: all 0.3s ease;
+margin-top: 10PX;
+}
+header .linkes:hover ul{
+  display: block;
+}
+header .linkes ul {
+  padding: 10PX;
+  margin: 0;
+  background-color: var(--main-color);
+  width: 200PX;
+  height: 150PX;
+  position: absolute;
+  right: 0;
+  border-radius: 10PX;
+  display: none;
+}
+header .linkes ul li{
+ margin-top: 10PX;
+ transition: all 0.3s ease;
+
+}
+header .linkes ul a {
+  text-decoration: none;
+  color: var(--second-color);
+  border-bottom: 2px solid var(--second-color);
+
+}
+
+header .linkes ul li:hover{
+  padding-left: 20PX;
+  cursor: pointer;
+}
+.section-one{
+  font-family: 'Work Sans', sans-serif;
+  background-image: url(../img/343306750_547419917575915_8177653623654933412_n.jpg);
+  background-attachment: local;
+  background-size: cover;
+
+}
+.section-one  .text-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 88VH;
+}
+.h-text{
+  margin-bottom: 15PX;
+  font-size: 40PX;
+  color: var(--main-color);
+}
+/* END HOME SECTION */
+/* START BOX SECTION  */
+
+.section-two{ 
+  height: fit-content;
+  
+}
+
+
+.box-cantainer{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
+ align-items: center;
+ justify-items: center;
+ gap: 50px;
+}
+.box{
+  margin-top: 50PX;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 30PX; 
+}
+.box i{
+  display: flex;
+  justify-content: center;
+  font-size: 40PX;
+  color: #10cab7;
+  flex-wrap: wrap;
+  transition: all 0.3 ease;
+}
+.box h1{
+  text-align: center;
+  margin-top: 20PX;
+
+}
+.box p{
+  text-align: center;
+  margin-top: 30PX;
+  line-height: 1.6;
+  color:rgb(159, 154, 154);
+}
+.box:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 20PX;
+  cursor: pointer;
+
+}
+/* END BOX SECTION /*
+
+/* START SPECIAL HEADING*/
+.special-heading{
+  color: #f6f6f6 ;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  
+}
+.special-heading +p{
+  font-size: 20px;
+  text-align: center;
+  margin: -30px 0 0 ;
+  color: #969292;
+}
+@media (max-width: 768px) {
+  .special-heading{
+  font-size: 60px;
+  }
+  .special-heading+p{
+  margin: -10 0 0 PX;
+  }
+}
+
+/* END SPECIAL HEADING /*
+/*start service box */
+.service{
+  width:99VW;
+}
+.serv{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300PX,1fr));
+  gap: 30PX;
+ margin-left: 80PX;
+ margin-top: 30PX;
+}
+.col{
+  padding: 10PX;
+  margin: 10PX;
+}
+.box-col{
+  display: flex;
+  gap: 10PX;
+  margin: 10PX 0;
+  height: 150PX;
+}
+@media (max-width:767px){
+  .box-col{
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+  }
+}
+.box-col i{
+  font-size: 30PX;
+  color: var(--main-color);
+}
+.box-col-flex{
+margin-top: -20PX;
+}
+.box-col-flex h3 {
+  font-size: large;
+  margin: 20px 0 ;
+}
+.img-section img {
+  width: 200PX;
+  height: 300PX;
+}
+.img-section{
+  width: 200PX;
+  position: relative;
+  margin: 0;
+}
+.img-section ::before{
+  content: "";
+  position: absolute;width: 200PX;
+  width: 100PX;
+  height: 200PX;
+  background-color: rgb(22, 37, 85);
+}
+@media (max-width:767px){
+  .img-section img{
+    display:none;
+  }
+}
+/*end service box* /
+/*start protfol box*/
+.protfol{
+background-color: #ffffff;
+width: 99VW;
+}
+.protfol-cantainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300PX,1fr));
+  gap: 20PX;
+  margin-left: 80PX;
+  margin-top: 30PX;
+}
+.protfol-box{
+  width: 280PX;
+  height: 250PX;
+  background-color: #f6f6f6;
+  border-radius: 15PX;
+}
+.protfol-text{
+  margin-left: 20PX;
+  margin-top: 20PX;
+}
+.protfol-text h4{
+  margin-bottom: 5PX;
+}
+.protfol-box img {
+  width: 280PX;
+  height: 150PX;
+  border-top-left-radius: 15PX;
+  border-top-right-radius: 15PX;
+}
+/*end protflio box*/
+
+
+
+
+
+
